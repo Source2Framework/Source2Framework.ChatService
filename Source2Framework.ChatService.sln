@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34526.213
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Source2Framework.ChatService", "Source2Framework.ChatService\Source2Framework.ChatService.csproj", "{1E816D72-D37E-4CD3-A96F-E40D50CD72F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Source2Framework.ChatService.API", "Source2Framework.ChatService.API\Source2Framework.ChatService.API.csproj", "{64EE4E37-254C-4A44-B2AE-808610102692}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E816D72-D37E-4CD3-A96F-E40D50CD72F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E816D72-D37E-4CD3-A96F-E40D50CD72F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E816D72-D37E-4CD3-A96F-E40D50CD72F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E816D72-D37E-4CD3-A96F-E40D50CD72F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64EE4E37-254C-4A44-B2AE-808610102692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EE4E37-254C-4A44-B2AE-808610102692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EE4E37-254C-4A44-B2AE-808610102692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EE4E37-254C-4A44-B2AE-808610102692}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37BF4B10-BFDA-4392-8BA6-8BAF1C1A2143}
+	EndGlobalSection
+EndGlobal
