@@ -18,11 +18,11 @@
 
         public delegate HookResult OnPlayerSayTeamEvent(CCSPlayerController player, CommandInfo info, ref string message);
 
-        public event OnPlayerSayEvent? OnPlayerSayTeamPre;
+        public event OnPlayerSayTeamEvent? OnPlayerSayTeamPre;
 
-        public event OnPlayerSayEvent? OnPlayerSayTeam;
+        public event OnPlayerSayTeamEvent? OnPlayerSayTeam;
 
-        public event OnPlayerSayEvent? OnPlayerSayTeamPost;
+        public event OnPlayerSayTeamEvent? OnPlayerSayTeamPost;
 
         public string GetPrefix();
 
