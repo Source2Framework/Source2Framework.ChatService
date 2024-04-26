@@ -1,1 +1,30 @@
 # Source2Framework.ChatService
+
+```csharp
+public interface IChatService : ISharedService
+{
+    public delegate HookResult OnPlayerSayEvent(CCSPlayerController player, CommandInfo info, ref string message);
+
+    public event OnPlayerSayEvent? OnPlayerSayPre;
+
+    public event OnPlayerSayEvent? OnPlayerSay;
+
+    public event OnPlayerSayEvent? OnPlayerSayPost;
+
+    public delegate HookResult OnPlayerSayTeamEvent(CCSPlayerController player, CommandInfo info, ref string message);
+
+    public event OnPlayerSayEvent? OnPlayerSayTeamPre;
+
+    public event OnPlayerSayEvent? OnPlayerSayTeam;
+
+    public event OnPlayerSayEvent? OnPlayerSayTeamPost;
+
+    public string GetPrefix();
+
+    public void PrintToChat(CCSPlayerController player, string message);
+
+    public void PrintToChatAll(string message, Func<CCSPlayerController, bool>? predicate = null);
+
+    public void PrintToTeam(string message, CsTeam team);
+}
+```
