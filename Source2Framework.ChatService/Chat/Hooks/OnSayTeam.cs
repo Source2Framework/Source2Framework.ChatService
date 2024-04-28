@@ -7,11 +7,11 @@
 
     public sealed partial class ChatService : IChatService
     {
-        public event IChatService.OnPlayerSayEvent? OnPlayerSayTeamPre;
+        public event IChatService.OnPlayerSayTeamEvent? OnPlayerSayTeamPre;
 
-        public event IChatService.OnPlayerSayEvent? OnPlayerSayTeam;
+        public event IChatService.OnPlayerSayTeamEvent? OnPlayerSayTeam;
 
-        public event IChatService.OnPlayerSayEvent? OnPlayerSayTeamPost;
+        public event IChatService.OnPlayerSayTeamEvent? OnPlayerSayTeamPost;
 
         private HookResult OnSayTeam(CCSPlayerController? player, CommandInfo info)
         {
