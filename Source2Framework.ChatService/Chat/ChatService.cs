@@ -20,9 +20,6 @@
 
         public override void Initialize(bool hotReload)
         {
-            this.Plugin.AddCommandListener("say", this.OnSay);
-            this.Plugin.AddCommandListener("say_team", this.OnSayTeam);
-
             ChatPrefix = ((this.Plugin as ChatServicePlugin)!.Config.ChatPrefix);
         }
 
@@ -31,13 +28,32 @@
             if (service is ICommandService commandService)
             {
                 this.CommandService = commandService;
+
+                this.Plugin.AddCommandListener("say", this.OnSay);
+                this.Plugin.AddCommandListener("say_team", this.OnSayTeam);
+            }
+        }
+
+        private void RemoveListeners()
+        {
+            this.Plugin.RemoveCommandListener("say", this.OnSay, HookMode.Pre);
+            this.Plugin.RemoveCommandListener("say_team", this.OnSayTeam, HookMode.Pre);
+        }
+
+        public override void OnServiceShutdown(IService service)
+        {
+            if (service is ICommandService)
+            {
+                this.RemoveListeners();
             }
         }
 
         public override void Shutdown(bool hotReload)
         {
-            this.Plugin.RemoveCommandListener("say", this.OnSay, HookMode.Pre);
-            this.Plugin.RemoveCommandListener("say_team", this.OnSayTeam, HookMode.Pre);
+            if (this.CommandService == null)
+                return;
+
+            this.RemoveListeners();
         }
 
         public void PrintToChat(CCSPlayerController player, string message)
