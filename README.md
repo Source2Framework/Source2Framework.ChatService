@@ -4,6 +4,10 @@
 > This module requires [Source2Framework.Core](https://github.com/Source2Framework/Source2Framework) and [Source2Framework.CommandService](https://github.com/Source2Framework/Source2Framework.CommandService)
 
 # Installation
+- Download the latest build
+- Drag & drop the content to your server
+
+# Service API Reference
 
 Available on [NuGet](https://www.nuget.org/packages/Source2Framework.ChatService.API/)
 [![NuGet version (Source2Framework.ChatService.API)](https://img.shields.io/nuget/v/Source2Framework.ChatService.API.svg?style=flat-square)](https://www.nuget.org/packages/Source2Framework.ChatService.API/)
