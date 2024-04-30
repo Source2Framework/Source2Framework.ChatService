@@ -3,6 +3,16 @@
 > [!IMPORTANT]  
 > This module requires [Source2Framework.Core](https://github.com/Source2Framework/Source2Framework) and [Source2Framework.CommandService](https://github.com/Source2Framework/Source2Framework.CommandService)
 
+# Installation
+
+Available on [NuGet](https://www.nuget.org/packages/Source2Framework.ChatService.API/)
+[![NuGet version (Source2Framework.ChatService.API)](https://img.shields.io/nuget/v/Source2Framework.ChatService.API.svg?style=flat-square)](https://www.nuget.org/packages/Source2Framework.ChatService.API/)
+
+```
+dotnet add package Source2Framework.ChatService.API --version 1.0.1
+```
+
+# Service interface
 
 ```csharp
 public interface IChatService : ISharedService
