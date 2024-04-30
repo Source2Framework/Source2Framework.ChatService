@@ -1,5 +1,9 @@
 # Source2Framework.ChatService
 
+> [!IMPORTANT]  
+> This module requires [Source2Framework.Core](https://github.com/Source2Framework/Source2Framework) and [Source2Framework.CommandService](https://github.com/Source2Framework/Source2Framework.CommandService)
+
+
 ```csharp
 public interface IChatService : ISharedService
 {
